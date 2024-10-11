@@ -14,7 +14,7 @@ const ShopContextProvider = (props) => {
   const [products, setProducts] = useState([]);
   const [token, setToken] = useState('');
   const navigate = useNavigate();
-  const backendURl = import.meta.env.VITE_BACKEND_URL;
+  const backendURl = "https://e-commers-back.vercel.app";
 
   // Add to Cart
   const addtoCart = async (itemId, size) => {
