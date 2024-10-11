@@ -1,20 +1,12 @@
 {
     "version": 2,
     "builds": [
-        {
-            "src": "server.js",
-            "use": "@vercel/node",
-            "config": {
-                "includeFiles": [
-                    "dist/**"
-                ]
-            }
-        }
+      { "src": "api/*.js", "use": "@vercel/node" }
     ],
     "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "server.js"
-        }
+      { "src": "/api/user", "dest": "/api/user.js" },
+      { "src": "/api/product", "dest": "/api/product.js" },
+      { "src": "/api/cart", "dest": "/api/cart.js" }
     ]
-}
+  }
+  
