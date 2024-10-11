@@ -9,7 +9,7 @@ import Login from './components/Login'
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 
-export const backendURl = import.meta.env.VITE_BACKEND_URL  // Backend URL from environment variables
+export const backendURl = "https://e-commers-back.vercel.app"  // Backend URL from environment variables
 
 const App = () => {
 
